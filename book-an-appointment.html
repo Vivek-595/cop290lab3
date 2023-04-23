@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{url_for(static,filename=global.css)}}" />
+    <link rel="stylesheet" href="{{url_for(static,filename=book-an-appointment.css)}}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inria Serif:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <main class="book-an-appointment9">
+      <nav class="nav-bar5">
+        <div class="logo5">
+          <a class="rectangle-a" href="/"></a
+          ><b class="rktg-med5"
+            ><span class="rktg8"
+              ><span class="rktg9">RKTG</span
+              ><span class="span14"> </span></span
+            ><b class="med5">MED</b></b
+          >
+        </div>
+        <div class="nav-buttons5">
+          <div class="home14" id="homeContainer">
+            <a class="home15" href="/">Home</a>
+          </div>
+          <b class="book-an-appointment10">Book An Appointment</b
+          ><a class="medshop10" href="./med-shop.html" id="medShop">MedShop</a
+          ><a class="home15" href="./about-us.html">About Us</a
+          ><a class="medshop10" href="./contact-us.html" id="contactUs"
+            >Contact Us</a
+          ><b class="book-an-appointment10">Find Doctors</b>
+        </div>
+        <img class="nav-bar-child5" alt="" src="./public/line-16@2x.png" />
+        <div class="nav-bar-child6"></div>
+        <a href="./login-page.html" class="login-button4" autofocus>
+          <img class="group-icon4" alt="" src="./public/group1.svg" /><b
+            class="login-sign4"
+            >Login / Sign Up</b
+        ></a>
+      </nav>
+      
+      <div class="book-an-appointment-child"></div>
+      <input class="book-an-appointment-item" type="text"  placeholder="Search the list"/><span
+        class="speciality-of-doctor"
+        >Speciality of doctor : </span
+      ><b class="consult-with-a">Consult with a Doctor</b
+      ><b class="mobile-no1">Mobile No : </b
+      ><input class="book-an-appointment-inner" type="tel" placeholder="Enter Mobile Number" /><b
+        class="a-verification-code"
+        >A verification code will be sent to this number.</b
+      ><button class="rectangle-button"></button
+      ><b class="book-an-appointment11">Book An Appointment</b
+      ><img class="chat-icon" alt="" src="./public/chat.svg" /><b
+        class="free-follow-up"
+        >Free follow-up</b
+      ><img class="comment-icon" alt="" src="./public/comment.svg" />
+      <footer class="footer">
+        <div class="footer-child"></div>
+        <img class="vector-icon21" alt="" src="./public/vector16.svg" /><img
+          class="vector-icon22"
+          alt=""
+          src="./public/vector17.svg"
+        /><a class="a6">+91 98123 54321</a
+        ><a class="inforktgmednet5">info@rktgmed.net</a
+        ><img class="icon4" alt="" src="./public/15032023-2153-12@2x.png" />
+        <div class="this-website-provides5">
+          This website provides an online medicine purchasing platform. Patients
+          can book a one-to-one appointment with doctors.
+        </div>
+        <div class="home-book-an-container8">
+          <span class="home-book-an-container9"
+            ><p><br><a href="./index.html" class="one-of-the">Home</a><br>
+              <a  href="./book-an-appointment.html" class="one-of-the">Book An Appointment</a><br>
+              <a  href="./med-shop.html" class="one-of-the">Medshop</a><br>
+              <a  href="./about-us.html" class="one-of-the">About Us</a><br>
+              <a  href="./contact-us.html" class="one-of-the">Contact Us</a><br>
+              <a  href="./book-an-appointment.html" class="one-of-the">Find Doctors</a></p></span
+            ></b
+          >
+        </div>
+        <b class="quick-links4">Quick Links</b
+        ><b class="contact-us17">Contact us</b>
+        <div class="footer-item"></div>
+        <div class="footer-inner"></div>
+        <img class="vector-icon23" alt="" src="./public/vector18.svg" /><img
+          class="vector-icon24"
+          alt=""
+          src="./public/vector19.svg"
+        />
+        <div class="follow-us5">Follow Us :</div>
+      </footer>
+      <!-- <div class="enter-mobile-number">Enter Mobile Number</div> -->
+      <!-- <b class="select-an-option">Select an option</b> -->
+    </main>
+
+    <script>
+      var homeContainer = document.getElementById("homeContainer");
+      if (homeContainer) {
+        homeContainer.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var medShop = document.getElementById("medShop");
+      if (medShop) {
+        medShop.addEventListener("click", function (e) {
+          window.location.href = "./med-shop.html";
+        });
+      }
+      
+      var contactUs = document.getElementById("contactUs");
+      if (contactUs) {
+        contactUs.addEventListener("click", function (e) {
+          window.location.href = "./contact-us.html";
+        });
+      }
+      
+      var loginButton = document.getElementById("loginButton");
+      if (loginButton) {
+        loginButton.addEventListener("click", function (e) {
+          window.location.href = "./login-page.html";
+        });
+      }
+      </script>
+  </body>
+</html>

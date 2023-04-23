@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Example</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>DOB</th>
+          <th>Mobile</th>
+          <th>User Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data %}
+        <tr>
+          <td>{{ ['name'] }}</td>
+          <td>{{ row['sex'] }}</td>
+          <td>{{ row['dob'] }}</td>
+          <td>{{ row['mob_number'] }}</td>
+          <td>{{ row['user_name'] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
